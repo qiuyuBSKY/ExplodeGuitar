@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">炸裂吉他</string>
+    <string name="page_main">首页</string>
+    <string name="page_study">学习</string>
+    <string name="page_update">进阶</string>
+    <string name="page_me">我</string>
+
+</resources>

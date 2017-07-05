@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/BottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_group_height"
+        android:padding="@dimen/button_group_padding"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_fire_bg"
+        android:layout_alignParentBottom="true">
+
+        <com.einstein.explodeguitar.view.ImageRadioButton
+            android:id="@+id/button_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/button_main_selecter"
+            android:text="@string/page_main"
+            android:textColor="@drawable/button_color_selecter"
+            android:textSize="@dimen/button_text_size"
+            />
+
+        <com.einstein.explodeguitar.view.ImageRadioButton
+            android:id="@+id/button_study"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/button_study_selecter"
+            android:text="@string/page_study"
+            android:textColor="@drawable/button_color_selecter"
+            android:textSize="@dimen/button_text_size"
+            />
+
+        <com.einstein.explodeguitar.view.ImageRadioButton
+            android:id="@+id/button_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/button_update_selecter"
+            android:text="@string/page_update"
+            android:textColor="@drawable/button_color_selecter"
+            android:textSize="@dimen/button_text_size"
+            />
+
+        <com.einstein.explodeguitar.view.ImageRadioButton
+            android:id="@+id/button_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/button_me_selecter"
+            android:text="@string/page_me"
+            android:textColor="@drawable/button_color_selecter"
+            android:textSize="@dimen/button_text_size"
+            />
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragmentPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/BottomGroup">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
