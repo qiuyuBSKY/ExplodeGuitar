@@ -39,21 +39,21 @@ public class MainActivity extends FragmentActivity{
     }
 
     private void initView(){
-        mViewPager = (ViewPager)findViewById(R.id.fragmentPager);
-        buttonList = new ArrayList<RadioButton>();
-        RadioButton lab1 = (RadioButton)findViewById(R.id.button_main);
-        RadioButton lab2 = (RadioButton)findViewById(R.id.button_study);
-        RadioButton lab3 = (RadioButton)findViewById(R.id.button_update);
-        RadioButton lab4 = (RadioButton)findViewById(R.id.button_me);
-        buttonList.add(lab1);
-        buttonList.add(lab2);
-        buttonList.add(lab3);
-        buttonList.add(lab4);
-        buttonGroup = (RadioGroup)findViewById(R.id.BottomGroup);
+        mViewPager = findViewById(R.id.fragmentPager);
+        buttonList = new ArrayList<>();
+        RadioButton mainPageBtn = findViewById(R.id.button_main);
+        RadioButton studyPageBtn = findViewById(R.id.button_study);
+        RadioButton updatePageBtn = findViewById(R.id.button_update);
+        RadioButton mePageBtn = findViewById(R.id.button_me);
+        buttonList.add(mainPageBtn);
+        buttonList.add(studyPageBtn);
+        buttonList.add(updatePageBtn);
+        buttonList.add(mePageBtn);
+        buttonGroup = findViewById(R.id.BottomGroup);
     }
 
     private void initData(){
-        data = new ArrayList<Fragment>();
+        data = new ArrayList<>();
         mainFragment = new MainPageFragment();
         studyFragment = new StudyPageFragment();
         updateFragment = new UpdatePageFragment();

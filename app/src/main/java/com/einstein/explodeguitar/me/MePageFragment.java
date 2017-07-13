@@ -19,7 +19,7 @@ public class MePageFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab_fragment, null);
-        TextView txtView = (TextView) view.findViewById(R.id.FragmentName);
+        TextView txtView = view.findViewById(R.id.FragmentName);
         txtView.setText("This is 我");
         return view;
     }

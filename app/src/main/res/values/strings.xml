@@ -5,4 +5,5 @@
     <string name="page_update">进阶</string>
     <string name="page_me">我</string>
 
+    <string name="dialog_loading_txt">加载中....</string>
 </resources>

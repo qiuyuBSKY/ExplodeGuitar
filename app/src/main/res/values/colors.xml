@@ -6,4 +6,6 @@
     <color name="btn_normal">#FFFFFF</color>
     <color name="btn_pressed">#FF0000</color>
     <color name="blue">#0000FF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>
